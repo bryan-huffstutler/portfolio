@@ -42,3 +42,12 @@
   flex-direction:row;
   justify-content:flex-end
 }
+
+#intro-div {
+  text-align: center;
+  padding: 14px;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
