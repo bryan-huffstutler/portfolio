@@ -1,22 +1,27 @@
-import {GiHamburgerMenu} from 'react-icons/gi'
 import React, {useState} from 'react'
 import NavLink from './NavLink';
 import {data} from './navbar-data'
+import { GiHamburgerMenu } from 'react-icons/gi'
+
 function MobileNavMenu(props) {
+
     const [open, setOpen] = useState(false)
 
     function toggle () {
         setOpen(prev => !open)
     }
+    let count=0
     return ( 
-        <div>
-            <GiHamburgerMenu size='2em' onClick={toggle}/>
+        <div id='mob-nav-menu'>
+            <GiHamburgerMenu size='1.3em' onClick={toggle} />
             {open ? 
             <div>
+                
                 {data.map(x => {
-                    return <NavLink divName = {x.name} linkName={x.linkName}/>
+                    count +=1
+                    return <NavLink key={count} onClick={toggle} divName = {x.name} linkName={x.linkName}/>
                 })}
-            </div> : "closed"}
+            </div> : ""}
         </div>
     );
 }

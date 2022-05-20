@@ -1,8 +1,9 @@
 function NavLink(props) {
-    const { divName, linkName } = props
+    const { divName, linkName, onClick } = props
+
     return (
         <div>
-            <a href={divName}>{linkName}</a>
+            <a onClick={onClick} href={divName}>{linkName}</a>
         </div>
     );
 }
