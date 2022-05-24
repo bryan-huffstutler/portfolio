@@ -51,3 +51,39 @@ a, a:visited, a:active{
   box-shadow: 2px 2px 20px black;
   padding: 10px;
 }
+
+.imageReel {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1000px;
+  
+}
+
+.imageSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.image {
+  height: 400px;
+  width: 100%;
+  display: inline-block;
+}
+
+.imageReelDots {
+  text-align: center;
+}
+
+.imageReelDot {
+  display: inline-block;
+  height: 20px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px 7px 0px;
+  background-color: #c4c4c4;
+}
+
+.imageReelDot.active {
+  background-color: #6a0dad;
+}
