@@ -1,7 +1,7 @@
 export const data = [
     {
         name: "#tools-div",
-        linkName: "Tools"
+        linkName: "Technologies"
     },
     {
         name: "#intro-div",

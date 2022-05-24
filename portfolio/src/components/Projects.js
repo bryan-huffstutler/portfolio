@@ -1,7 +1,7 @@
 import React from 'react'
-import ImageReel from './ImageReel/ImageReel'
-import { bbs, rtv } from './ImageReel/image-data'
 
+import ImageReel from './ImageReel/ImageReel'
+import { bbs, rtv } from './ImageReel/image-data
 
 function Projects(props) {
 

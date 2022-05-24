@@ -2,13 +2,20 @@
   .above-360 {
     display: none;
   }
+  .tools-above-360{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 361px) {
   .below-360 {
-    background-color: red;
     display: none;
   }
+
+  .mob-tools-below-360{
+    display: none;
+  }
+  
   .above-360 {
     display: flex;
     justify-content: space-around;
@@ -30,7 +37,17 @@
   padding: 14px;
 }
 
-a, a:visited, a:hover, a:active {
+a, a:visited, a:active{
   color: inherit;
   margin: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#mob-nav-menu {
+  position: fixed;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 20px black;
+  padding: 10px;
 }
