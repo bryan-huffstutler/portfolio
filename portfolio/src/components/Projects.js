@@ -1,7 +1,15 @@
+import React from 'react'
+import ImageReel from './ImageReel/ImageReel'
+import { bbs, rtv } from './ImageReel/image-data'
+
+
 function Projects(props) {
+
+
     return (
-        <div id='projects-div'>
-            <h1>projects</h1>
+        <div>
+            {bbs.map((x, index) => <img key={index} src={x.source}/>)}
+
         </div>
     );
 }
