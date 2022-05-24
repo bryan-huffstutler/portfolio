@@ -7,6 +7,7 @@ function Projects(props) {
 
     return (
         <div id='projects-container'>
+            <h1>Projects</h1>
             <div className='project-container'>
                 <h3>BBs Sports Bar</h3>
                 <div className='project'>
@@ -22,12 +23,13 @@ function Projects(props) {
                         their personal information, request timeoff, and view their available vacation
                         time, sick time and personal time.
                     </p>
+                    <h5>Technologies utilized: React, Node, MongoDB</h5>
                 </div>
 
             </div>
 
             <div className='project-container'>
-                <h3>Rock The Vote</h3>
+                <h3 style={{justifyContent: 'flex-end', display: 'flex'}}>Rock The Vote</h3>
                 <div className='project2'>
                     <p>A political 'social media' like project. Users can sign up, and login to 
                         view posts, create posts, like and dislike posts and leave comments. The 
@@ -35,7 +37,7 @@ function Projects(props) {
                         side is where they see only their posts and comments. The user can then 
                         delete, update, and manage their posts and likes/dislikes from here.
                     </p>
-                    {/* <h5>Technologies utilized: React, Node, MongoDB</h5> */}
+                    <h5>Technologies utilized: React, Node, MongoDB</h5>
                     <ImageReel imgReel={rtv} />
                 </div>
             </div>
