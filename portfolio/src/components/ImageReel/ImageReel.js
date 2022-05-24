@@ -34,6 +34,7 @@ function ImageReel(props) {
           {imgReel.map((x, index) =>( 
             <div className='image' key={index}>
               <img src={x.source} width={1000} height={500} style={{borderRadius: '40px'}}/>
+              <p style={{textAlign: "center"}}>{x.desc}</p>
             </div>
           ))}
       </div>
