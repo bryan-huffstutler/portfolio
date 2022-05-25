@@ -20,6 +20,18 @@
     display: flex;
     justify-content: space-around;
   }
+
+  .tools-above-360 {
+    text-align: center;
+  }
+
+  #navbar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    z-index: 1000;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -34,10 +46,29 @@
     max-width: 700px;
   }
 
+  #navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 1000;
+  }
+
   
 }
 
 @media screen and (min-width: 1800px) {
+  #about-div {
+    margin: 35px;
+  }
+
+  #about-div > p {
+    font-size: 1.2em;
+    padding: 25px;
+    line-height: 1.6em;
+    text-align: center;
+  }
   
   .imageReel {
     margin: 0 auto;
@@ -84,7 +115,7 @@
 
   .project > p {
     line-height: 2.0em;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .project > h5 {
@@ -96,7 +127,7 @@
 
   .project2 > p {
     line-height: 2.0em;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .project2 > h5 {
@@ -144,6 +175,14 @@
   
 }
 
+#link {
+  background-color: black;
+  margin: 10px;
+  border-radius: 4px;
+  padding: 6px;
+  color: whitesmoke;
+}
+
 #intro-div {
   text-align: center;
   padding: 14px;
@@ -166,4 +205,8 @@ a, a:visited, a:active{
 
 * {
   font-family: 'Open Sans', sans-serif;
+}
+
+#intro-div {
+  margin: 45px auto;
 }

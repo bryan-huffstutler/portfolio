@@ -4,15 +4,20 @@ export const data = [
         linkName: "Technologies"
     },
     {
-        name: "#intro-div",
-        linkName: "Intro"
-    },
-    {
-        name: "#projects-div",
+        name: "#projects-container",
         linkName: "Projects"
     },
     {
         name: "#about-div",
         linkName: "About"
+    },
+    {
+        name: "#badges",
+        linkName: "Credentials"
+    },
+    {
+        name: "#intro-div",
+        linkName: "Top"
     }
+    
 ]

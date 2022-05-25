@@ -42,6 +42,7 @@ function Tools(props) {
             </div>
 
             <div className='tools-above-360'>
+                <h1>Available Technologies</h1>
                 <a href='https://nodejs.org/en/' target='_blank'><DiNodejsSmall size="3em" color='#74AC63' /></a>
                 <a href='https://www.javascript.com/' target='_blank'><DiJavascript1 size='3em' color='#FCDC00' /></a>
                 <a href='https://developer.mozilla.org/en-US/docs/Glossary/HTML5' target='_blank'><DiHtml5 size='3em' color='#E96228' /></a>

@@ -2,7 +2,7 @@ function NavLink(props) {
     const { divName, linkName, onClick } = props
 
     return (
-        <div>
+        <div id='link'>
             <a onClick={onClick} href={divName}>{linkName}</a>
         </div>
     );

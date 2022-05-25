@@ -5,20 +5,25 @@ import Navbar from './components/Navbar/Navbar';
 import Intro from './components/Intro';
 import About from './components/About';
 import Projects from './components/Projects';
+import Badges from './components/Badges';
 
 function App() {
 
   return (
-    <div>
+    <div className='app-div'>
       <Navbar/>
+      <div className='intro-tools-div'>
+        <Intro/>
 
-      <Intro/>
-
-      <Tools />
+        <Tools />
+      </div>
+      
 
       <Projects/>
 
       <About/>
+
+      <Badges />
     </div>
   );
 }

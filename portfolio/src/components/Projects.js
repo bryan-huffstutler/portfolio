@@ -9,7 +9,7 @@ function Projects(props) {
         <div id='projects-container'>
             <h1>Projects</h1>
             <div className='project-container'>
-                <h3>BBs Sports Bar</h3>
+                <h2>BBs Sports Bar</h2>
                 <div className='project'>
                     <ImageReel imgReel={bbs} />
                     <p>
@@ -29,7 +29,7 @@ function Projects(props) {
             </div>
 
             <div className='project-container'>
-                <h3 style={{justifyContent: 'flex-end', display: 'flex'}}>Rock The Vote</h3>
+                <h2 style={{justifyContent: 'flex-end', display: 'flex'}}>Rock The Vote</h2>
                 <div className='project2'>
                     <p>A political 'social media' like project. Users can sign up, and login to 
                         view posts, create posts, like and dislike posts and leave comments. The 
