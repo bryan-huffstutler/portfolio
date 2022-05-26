@@ -38,7 +38,7 @@ function About() {
 
             <div className='about-above-480'>
                 <h1>About Me</h1>
-                <p>
+                <p className='about-p'>
                     I was asked not too long ago to describe myself to someone, and found it hard to do without talking about accomplishments, without talking about family,
                     and without talking about hobbies. Perhaps that is what makes up a personality and what people really mean by 'describe yourself,' so I'm going to talk about
                     my life here, read if you'd like. My name is Bryan Huffstutler, I have a large family by today's standards, it contains myself, my wife, and our four children.

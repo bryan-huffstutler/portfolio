@@ -6,24 +6,27 @@ import Intro from './components/Intro';
 import About from './components/About';
 import Projects from './components/Projects';
 import Badges from './components/Badges';
+import Footer from './components/Footer';
 
 function App() {
 
   return (
     <div className='app-div'>
-      <Navbar/>
+      <Navbar />
       <div className='intro-tools-div'>
-        <Intro/>
+        <Intro />
 
         <Tools />
       </div>
-      
 
-      <Projects/>
 
-      <About/>
+      <Projects />
+
+      <About />
 
       <Badges />
+
+      <Footer />
     </div>
   );
 }

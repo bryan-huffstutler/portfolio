@@ -94,7 +94,7 @@ function Projects(props) {
                 </div>
 
                 <div className='project-container'>
-                    <h2 style={{ justifyContent: 'flex-end', display: 'flex' }}>Rock The Vote</h2>
+                    <h2>Rock The Vote</h2>
                     <div className='project2'>
                         <p>A political 'social media' like project. Users can sign up, and login to
                             view posts, create posts, like and dislike posts and leave comments. The

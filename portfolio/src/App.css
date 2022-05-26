@@ -79,6 +79,11 @@
   .project2 {
     padding: 0px 40px;
   }
+
+  #resume-dl-link {
+    font-size: 1.2em;
+    text-decoration: none;
+  }
 }
 
 /* ----------------------------------------------------- */
@@ -87,9 +92,207 @@
   .navbar-480 {
     display: none;
   }
+
+  #resume-dl-link {
+    font-size: 1.3em;
+    text-decoration: none;
+  }
+
+  .mob-tools-below-480,
+  .projects-480,
+  .badges-480,
+  .about-480 {
+    display: none;
+  }
+
+  .navbar-above-480 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navbar-above-480 {
+    padding: 14px;
+    background-color: black;
+    color: whitesmoke;
+  }
+
+  #image-tablet {
+    height: 350px;
+  }
+
+  .image > p {
+    display: none;
+  }
+
+  .image > img {
+    width: 80%;
+    height: 350px;
+  }
+
+  .imageReel {
+    margin: 0;
+    overflow: hidden;
+    max-width: 85%;
+  }
+
+  .project,
+  .project2 {
+    padding: 0px 40px;
+    text-align: center;
+  }
+
+  .project-container {
+    text-align: center;
+  }
+
+  #intro-div {
+    text-align: center;
+  }
+
+  #badges {
+    text-align: center;
+  }
+
+  #badges > h1 {
+    text-align: left;
+  }
+
+  .about-p {
+    line-height: 1.7em;
+    padding: 35px;
+    text-align: center;
+  }
+
+  .tools-above-480 {
+    text-align: center;
+  }
+
+  .tools-above-480 > h1 {
+    text-align: left;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    color: whitesmoke;
+  }
+
+  .footer > a {
+    padding: 11px;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    border-radius: 14px 0px 0px 0px;
+  }
 }
 
 /* ----------------------------------------------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .navbar-480 {
+    display: none;
+  }
+
+  #resume-dl-link {
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+
+  .mob-tools-below-480,
+  .projects-480,
+  .badges-480,
+  .about-480 {
+    display: none;
+  }
+
+  .navbar-above-480 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navbar-above-480 {
+    padding: 14px;
+    background-color: black;
+    color: whitesmoke;
+  }
+
+  #image-tablet {
+    height: 450px;
+  }
+
+  .image > p {
+    display: none;
+  }
+
+  .image > img {
+    width: 80%;
+    height: 450px;
+  }
+
+  .imageReel {
+    margin: 0;
+    overflow: hidden;
+    max-width: 85%;
+  }
+
+  .project,
+  .project2 {
+    padding: 0px 40px;
+    text-align: center;
+  }
+
+  .project-container {
+    text-align: center;
+  }
+
+  #intro-div {
+    text-align: center;
+  }
+
+  #badges {
+    text-align: center;
+  }
+
+  #badges > h1 {
+    text-align: left;
+  }
+
+  .about-p {
+    line-height: 1.7em;
+    padding: 35px;
+    text-align: center;
+  }
+
+  .tools-above-480 {
+    text-align: center;
+  }
+
+  .tools-above-480 > h1 {
+    text-align: left;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    color: whitesmoke;
+  }
+
+  .footer > a {
+    padding: 11px;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    border-radius: 14px 0px 0px 0px;
+  }
+}
+
+/* ----------------------------------------------------- */
+
+@media screen and (min-width: 1201px) {
+}
+
+/* ----------------------------------------------------- */
+
 * {
   font-family: "Open Sans", sans-serif;
 }
@@ -127,11 +330,6 @@
 
 .imageReelDot.active {
   background-color: #6a0dad;
-}
-
-#resume-dl-link {
-  font-size: 1.8em;
-  text-decoration: none;
 }
 
 a,
