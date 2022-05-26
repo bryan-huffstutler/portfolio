@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from './Image'
-
 
 function ImageReel(props) {
   const { imgReel } = props
@@ -17,9 +15,9 @@ function ImageReel(props) {
   React.useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(
-      () => 
-        setIndex((prevIndex) => 
-        prevIndex === imgReel.length-1 ? 0 : prevIndex +1), delay
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === imgReel.length - 1 ? 0 : prevIndex + 1), delay
     );
     return () => {
       resetTimeout()
@@ -27,29 +25,83 @@ function ImageReel(props) {
   }, [index])
 
   return (
-    <div className='imageReel'>
+    <div>
+      {/* <div className="image-reel-480">
+        <div className='imageReel'>
+          <div className='imageSlider'
+            style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
+            {imgReel.map((x, index) => (
+              <div className='image' key={index}>
+                <img src={x.source} width={300} height={200} style={{ borderRadius: '40px' }} />
+                <p style={{ textAlign: "center" }}>{x.desc}</p>
+              </div>
+            ))}
+          </div>
 
-      <div className='imageSlider'
-           style={{transform: `translate3d(${-index*100}%, 0, 0)`}}>
-          {imgReel.map((x, index) =>( 
-            <div className='image' key={index}>
-              <img src={x.source} width={1000} height={500} style={{borderRadius: '40px'}}/>
-              <p style={{textAlign: "center"}}>{x.desc}</p>
-            </div>
-          ))}
+          <div className='imageReelDots'>
+            {imgReel.map((_, idx) => (
+              <div key={idx}
+                className={`imageReelDot${index === idx ? " active" : ""}`}
+                onClick={() => {
+                  setIndex(idx)
+                }}></div>
+            ))}
+          </div>
+        </div>
       </div>
 
-      <div className='imageReelDots'>
-        {imgReel.map((_, idx) => (
-          <div key={idx} 
-          className={`imageReelDot${index === idx ? " active": ""}`}
-          onClick={() => {
-            setIndex(idx)
-          }}></div>
-        ))}
-      </div>
+      <div className="image-reel-768">
+        <div className='imageReel'>
+          <div className='imageSlider'
+            style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
+            {imgReel.map((x, index) => (
+              <div className='image' key={index}>
+                <img src={x.source} width={700} height={350} style={{ borderRadius: '40px' }} />
+                <p style={{ textAlign: "center" }}>{x.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className='imageReelDots'>
+            {imgReel.map((_, idx) => (
+              <div key={idx}
+                className={`imageReelDot${index === idx ? " active" : ""}`}
+                onClick={() => {
+                  setIndex(idx)
+                }}></div>
+            ))}
+          </div>
+        </div>
+      </div> */}
+
+
+
+        <div className='imageReel'>
+          <div className='imageSlider'
+            style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
+            {imgReel.map((x, index) => (
+              <div className='image' id="image-tablet"key={index}>
+                <img src={x.source} width={1000} height={500} style={{ borderRadius: '40px' }} />
+                <p style={{ textAlign: "center" }}>{x.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className='imageReelDots'>
+            {imgReel.map((_, idx) => (
+              <div key={idx}
+                className={`imageReelDot${index === idx ? " active" : ""}`}
+                onClick={() => {
+                  setIndex(idx)
+                }}></div>
+            ))}
+          </div>
+        </div>
+
 
     </div>
+
+
   );
 }
 

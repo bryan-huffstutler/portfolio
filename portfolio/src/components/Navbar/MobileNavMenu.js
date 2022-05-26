@@ -13,7 +13,7 @@ function MobileNavMenu(props) {
     let count=0
     return ( 
         <div id='mob-nav-menu'>
-            <GiHamburgerMenu size='1.3em' onClick={toggle} />
+            <GiHamburgerMenu size='2.3em' onClick={toggle} />
             {open ? 
             <div>
                 
