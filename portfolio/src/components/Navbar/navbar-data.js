@@ -14,10 +14,6 @@ export const data = [
     {
         name: "#badges",
         linkName: "Credentials"
-    },
-    {
-        name: "#intro-div",
-        linkName: "Top"
     }
     
 ]

@@ -5,7 +5,7 @@ function Badges() {
     const [toggle, setToggle] = React.useState(false)
 
     return (
-        <div>
+        <div className='badges-container'>
             <div className='badges-480'>
                 {
                     toggle ?
