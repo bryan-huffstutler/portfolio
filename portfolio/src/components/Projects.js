@@ -21,8 +21,8 @@ function Projects(props) {
                         </div>
                         <div>
                             <div className='project-container'>
-                                <h2>BBs Sports Bar</h2>
                                 <div className='project'>
+                                    <h2>BBs Sports Bar</h2>
                                     <ImageReel imgReel={bbs} />
                                     <p>
                                         This project was created for a sports bar named BBs in St. Louis, MO.

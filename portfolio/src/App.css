@@ -29,7 +29,12 @@
 
   .project-container {
     text-align: center;
+    color: white;
   }
+
+  /* .projects-480 {
+    background-color: black;
+  } */
 
   #image-tablet {
     height: 200px;
@@ -58,6 +63,7 @@
     text-align: center;
     line-height: 1.5em;
     padding: 0px 40px;
+    color: white;
   }
 
   .badges-above-480 {
