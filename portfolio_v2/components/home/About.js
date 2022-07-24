@@ -7,7 +7,7 @@ function About() {
         <div className="hidden 2xl:block 2xl:float-right 2xl:m-8">
           <Image className='rounded-3xl' src="/images/B.png" alt="logo" width={350} height={350} />
         </div>
-        <h1 className="text-3xl underline underline-offset-4 bg-yellow-300 inline p-1">
+        <h1 className="text-3xl underline underline-offset-4 bg-yellow-300 inline p-1 text-black">
           About Me
         </h1>
 

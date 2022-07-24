@@ -2,6 +2,7 @@ import Image from "next/image";
 import classes from './Intro.module.css'
 
 function Intro() {
+  
   return (
     <div className="ml-20 leading-7 font-sans border-4">
       <div className={classes.wrapper}>
