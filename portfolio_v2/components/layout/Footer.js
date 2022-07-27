@@ -30,7 +30,7 @@ function Footer() {
       </div>
 
       <div className="lg:col-start-3 lg:col-end-4 justify-self-end">
-        <Image src="/images/b.png" alt="logo" width={120} height={90} />
+        <Image src="/images/B.png" alt="logo" width={120} height={90} />
       </div>
     </div>
   );
