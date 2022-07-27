@@ -2,7 +2,7 @@ import { BsTwitter } from "react-icons/bs";
 import {FaGithub} from 'react-icons/fa'
 import {FaLinkedin} from 'react-icons/fa'
 
-function Footer() {
+function Sidebar() {
   return (
     <div className="fixed top-40 p-5 z-50">
       <a className="text-blue-500 float-left md:float-none" href="https://twitter.com/Bryan_FS_Dev" target="blank">
@@ -19,4 +19,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Sidebar;

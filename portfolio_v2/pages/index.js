@@ -3,7 +3,7 @@ import About from "../components/home/About";
 import Intro from "../components/home/Intro";
 import blogDbConnect from '../utils/blogDbConnect'
 import Blog from '../models/Blog'
-import FeaturedBlogs from "../components/home/blogs/FeaturedBlogs";
+import FeaturedBlogs from "../components/blogs/FeaturedBlogs";
 import React, {useState} from 'react'
 
 export default function Home(props) {
@@ -17,7 +17,7 @@ export default function Home(props) {
 
   return (
     <div className='mt-20 lg:grid lg:grid-cols-4'>
-      <div className='lg:col-start-1 lg:col-end-5 lg:row-start-1'>
+      <div className='mt-16 lg:col-start-1 lg:col-end-5 lg:row-start-1'>
         <Intro />
       </div>
 
