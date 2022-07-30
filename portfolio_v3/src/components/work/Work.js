@@ -1,14 +1,15 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import {FaReact} from 'react-icons/fa'
-import {SiExpress} from 'react-icons/si'
-import {SiMongodb} from 'react-icons/si'
-import {IoLogoNodejs} from 'react-icons/io'
+import { FaReact } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { IoLogoNodejs } from "react-icons/io";
 
 function Work() {
   return (
     <div className="mt-36">
+      {/* bbs-bar */}
       <div className="border-4 lg:grid lg:grid-cols-2 ml-20">
         <div className="lg:col-start-1 lg:col-end-2 m-4">
           <Carousel>
@@ -61,7 +62,7 @@ function Work() {
             BB's Sports Bar
           </h1>
 
-          <p className="p-4 text-center leading-9 text-lg">
+          <p className="p-4 text-center leading-loose text-2xl">
             This project was created for a small sports in St Louis, MO. It
             provides the Manager's/Admin a mini HR GUI through the admin panel
             to handle employee logins, PTO requests, and allows the
@@ -74,16 +75,123 @@ function Work() {
             website. Changes made to the Menu and Events page are reflected in
             the live website.
           </p>
-          <p className="text-left text-xl font-bold">Created with:</p>
+        </div>
+        <div className="text-center lg:col-start-1 lg:col-end-4 m-4">
+          <p className=" text-xl font-bold text-red-500">Created With</p>
           <div className="ml-5 flex justify-around">
-            <FaReact size='4em'  className='inline text-blue-400'/>
-            <SiExpress size='4em' className='inline'/>
-            <SiMongodb size='4em' className='inline text-green-800'/>
-            <IoLogoNodejs size='4em' className='inline text-yellow-500'/>
+            <FaReact size="4em" className="inline text-blue-400" />
+            <SiExpress size="4em" className="inline" />
+            <SiMongodb size="4em" className="inline text-green-800" />
+            <IoLogoNodejs size="4em" className="inline text-yellow-500" />
           </div>
         </div>
       </div>
-      Work
+
+      {/* nutri-app */}
+      <div className="border-4 lg:grid lg:grid-cols-2 ml-20 mt-10">
+        <div className="lg:col-start-1 lg:col-end-2">
+          <h1 className="text-center text-2xl p-2 m-4 underline-offset-2 underline bg-red-300">
+            Nutri-App
+          </h1>
+
+          <p className="p-4 text-center leading-loose text-2xl align-middle">
+            I created this web app because I wanted to learn how to integrate
+            third party API's into a MERN full-stack application. I decided to
+            do so with a project that most developers do at some point when
+            learning, a recipe book app. This web app integrates RapidAPI.com's
+            Spoonacular API. Front end requests are routed through Express
+            server, served up with Node, and the user can save their favorite
+            recipes to MongoDB. The recipes are then associated with their own
+            user information. This project taught me a few things about MongoDB
+            I didn't know about, including Document relations, and also learned
+            things about creating an API of my own.
+          </p>
+        </div>
+        <div className="lg:col-start-2 lg:col-end-3 m-4">
+          <Carousel>
+            <div>
+              <img src="images/NutriApp/login_screen.PNG" alt="login-screen" />
+              <p className="text-sm">Login Screen</p>
+            </div>
+            <div>
+              <img
+                src="images/NutriApp/recipes_searched.PNG"
+                alt="searched-recipes"
+              />
+              <p className="text-sm">Searched Recipes</p>
+            </div>
+            <div>
+              <img
+                src="images/NutriApp/saved_recipes.PNG"
+                alt="saved-recipes"
+              />
+              <p className="text-sm">Saved Recipes</p>
+            </div>
+          </Carousel>
+        </div>
+        <div className="text-center lg:col-start-1 lg:col-end-4 m-4">
+          <p className=" text-xl font-bold text-red-500">Created With</p>
+          <div className="ml-5 flex justify-around">
+            <FaReact size="4em" className="inline text-blue-400" />
+            <SiExpress size="4em" className="inline" />
+            <SiMongodb size="4em" className="inline text-green-800" />
+            <IoLogoNodejs size="4em" className="inline text-yellow-500" />
+          </div>
+        </div>
+      </div>
+
+      {/* rtv */}
+      <div className="border-4 lg:grid lg:grid-cols-2 ml-20 mt-10">
+        <div className="lg:col-start-1 lg:col-end-2">
+          <h1 className="text-center text-2xl p-2 m-4 underline-offset-2 underline bg-red-300">
+            Nutri-App
+          </h1>
+
+          <p className="p-4 text-center leading-loose text-2xl align-middle">
+            I created this web app because I wanted to learn how to integrate
+            third party API's into a MERN full-stack application. I decided to
+            do so with a project that most developers do at some point when
+            learning, a recipe book app. This web app integrates RapidAPI.com's
+            Spoonacular API. Front end requests are routed through Express
+            server, served up with Node, and the user can save their favorite
+            recipes to MongoDB. The recipes are then associated with their own
+            user information. This project taught me a few things about MongoDB
+            I didn't know about, including Document relations, and also learned
+            things about creating an API of my own.
+          </p>
+        </div>
+        <div className="lg:col-start-2 lg:col-end-3 m-4">
+          <Carousel>
+            <div>
+              <img src="images/NutriApp/login_screen.PNG" alt="login-screen" />
+              <p className="text-sm">Login Screen</p>
+            </div>
+            <div>
+              <img
+                src="images/NutriApp/recipes_searched.PNG"
+                alt="searched-recipes"
+              />
+              <p className="text-sm">Searched Recipes</p>
+            </div>
+            <div>
+              <img
+                src="images/NutriApp/saved_recipes.PNG"
+                alt="saved-recipes"
+              />
+              <p className="text-sm">Saved Recipes</p>
+            </div>
+          </Carousel>
+        </div>
+        <div className="text-center lg:col-start-1 lg:col-end-4 m-4">
+          <p className=" text-xl font-bold text-red-500">Created With</p>
+          <div className="ml-5 flex justify-around">
+            <FaReact size="4em" className="inline text-blue-400" />
+            <SiExpress size="4em" className="inline" />
+            <SiMongodb size="4em" className="inline text-green-800" />
+            <IoLogoNodejs size="4em" className="inline text-yellow-500" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
