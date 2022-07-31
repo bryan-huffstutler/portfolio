@@ -20,13 +20,15 @@ function FeaturedBlogs(props) {
         <p className="text-3xl underline text-center underline-offset-4 bg-lime-300 inline p-1 text-black">
           Recent Blogs
         </p>
-        <a className="justify-self-end" href="/allBlogs">
+        <a className="justify-self-end" href="https://bryan-fs-dev-blog.vercel.app/" target="blank">
           <button className="justify-self-end border-2 bg-blue-600 text-white p-2 rounded-lg">
             All Blogs
           </button>
         </a>
       </div>
-      {blogs ? blogs.map((blog) => <BlogCard {...blog} />) : "Loading..."}
+      <div className="lg:col-start-1 lg:col-end-3 h-128 overflow-y-scroll">
+        {blogs ? blogs.map((blog) => <BlogCard {...blog} />) : "Loading..."}
+      </div>
     </div>
   );
 }

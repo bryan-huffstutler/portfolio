@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function BlogCard(props) {
   const {
@@ -12,7 +12,7 @@ function BlogCard(props) {
     description,
   } = props;
 
-  const date = pubDate.slice(0,10)
+  const date = pubDate.slice(0, 10);
 
   return (
     <div className="m-9 border-4 p-2">
@@ -20,7 +20,7 @@ function BlogCard(props) {
         <h1 className="text-xl">{title}</h1>
         <div className="border"></div>
         <p className="text-xs">{date}</p>
-        <img src={thumbnail} alt="blog-pic" className="p-2"/>
+        <img src={thumbnail} alt="blog-pic" className="p-2" />
       </a>
     </div>
   );
