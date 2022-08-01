@@ -4,7 +4,7 @@ import {FaLinkedin} from 'react-icons/fa'
 
 function Sidebar() {
   return (
-    <div className="fixed top-40 p-5 z-50">
+    <div className="md:fixed md:top-40 md:p-5 md:z-50">
       <a className="text-blue-500 float-left md:float-none" href="https://twitter.com/Bryan_FS_Dev" target="blank">
         <BsTwitter size='2em'/>
       </a><br/>

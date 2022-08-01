@@ -15,7 +15,7 @@ function FeaturedBlogs(props) {
   }, []);
 
   return (
-    <div className="p-8 m-8 ml-20 leading-7 font-mono border-4 lg:grid lg:grid-cols-2">
+    <div className="md:p-8 md:m-8 ml-20 leading-7 font-mono border-4 lg:grid lg:grid-cols-2">
       <div className="lg:col-start-1 lg:col-end-3 lg:grid lg:grid-cols-2">
         <p className="text-3xl underline text-center underline-offset-4 bg-lime-300 inline p-1 text-black">
           Recent Blogs
@@ -26,7 +26,7 @@ function FeaturedBlogs(props) {
           </button>
         </a>
       </div>
-      <div className="lg:col-start-1 lg:col-end-3 h-128 overflow-y-scroll">
+      <div className="lg:col-start-1 lg:col-end-3 sm:h-96 md:h-128 overflow-y-scroll">
         {blogs ? blogs.map((blog) => <BlogCard {...blog} />) : "Loading..."}
       </div>
     </div>

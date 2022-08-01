@@ -6,6 +6,10 @@ import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 import { SiNextdotjs } from "react-icons/si";
+import {SiJavascript} from "react-icons/si";
+import {SiCss3} from "react-icons/si";
+import {SiHtml5} from "react-icons/si";
+
 
 function Work() {
   return (
@@ -74,7 +78,7 @@ function Work() {
             single item updates (such as price), and remove the item from the
             Menu. The Manager can also add, edit, and remove Events from the
             website. Changes made to the Menu and Events page are reflected in
-            the live website.
+            the live website. <a href="https://bbs-restaurant.herokuapp.com/" className="hover:text-lime-500 text-red-500" target="blank">View Live</a>
           </p>
         </div>
         <div className="text-center lg:col-start-1 lg:col-end-4 m-4">
@@ -100,7 +104,7 @@ function Work() {
             I wanted to make my own blog website, and learn a new technology at the same time...so I created this blog with Next.js.
             This app utilizes the Nextjs framework for the front-end, routing, React, and pre-rendering. I decided to utilize MongoDB Atlas for the database.
             This web-app also has an admin panel that allows myself to login and add new blogs to the database as well. From the admin panel I can pick and choose
-            which blogs are featured, add and delete blogs as well. Deployed on Vercel.
+            which blogs are featured, add and delete blogs as well. <a href="https://bryan-fs-dev-blog.vercel.app/" className="hover:text-lime-500 text-red-500" target="blank">Deployed on Vercel.</a>
           </p>
         </div>
         <div className="lg:col-start-2 lg:col-end-3 m-4">
@@ -239,6 +243,54 @@ function Work() {
             <SiExpress size="4em" className="inline" />
             <SiMongodb size="4em" className="inline text-green-800" />
             <IoLogoNodejs size="4em" className="inline text-yellow-500" />
+          </div>
+        </div>
+      </div>
+
+      {/* typing-tester */}
+      <div className="border-4 lg:grid lg:grid-cols-2 ml-20 mt-10">
+        
+        <div className="lg:col-start-1 lg:col-end-2 m-4">
+          <Carousel>
+            <div>
+              <img src="images/typing-tester/Capture.PNG" alt="home-page" />
+              <p className="text-sm">Home Page</p>
+            </div>
+            <div>
+              <img
+                src="images/typing-tester/Errors.PNG"
+                alt="errors"
+              />
+              <p className="text-sm">Errors Display Red</p>
+            </div>
+            <div>
+              <img
+                src="images/typing-tester/finished.PNG"
+                alt="finished"
+              />
+              <p className="text-sm">Stats Display On Completion</p>
+            </div>
+          </Carousel>
+        </div>
+        <div className="lg:col-start-2 lg:col-end-3">
+          <h1 className="text-center text-2xl p-2 m-4 underline-offset-2 underline bg-cyan-5001">
+            Typing-Tester
+          </h1>
+
+          <p className="p-4 text-center leading-loose text-2xl align-middle">
+            Typing-tester was created using HTML, CSS and JavaScript only. This was an exercise for myself
+            to better understand DOM Manipulation in my early months of learning JavaScript. While it was 
+            created early it taught me a lot of fundamentals, and taught me how to deploy static websites to 
+            Heroku. 
+          </p>
+          <p className="text-center"><a href="http://typing-tester.herokuapp.com/" className="hover:text-lime-500 text-2xl text-red-500" target="blank">Live Site</a></p>
+        </div>
+        <div className="text-center lg:col-start-1 lg:col-end-4 m-4">
+          <p className=" text-xl font-bold text-red-500">Created With</p>
+          <div className="ml-5 flex justify-around">
+            <SiHtml5 size='4em' className=" text-orange-500"/>
+            <SiCss3 size='4em' className=" text-blue-500"/>
+            <SiJavascript size='4em' className="text-yellow-400"/>
           </div>
         </div>
       </div>

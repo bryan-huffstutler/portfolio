@@ -2,9 +2,9 @@
 
 function About() {
   return (
-    <div className="h-128">
+    <div className="md:h-128">
       <div className="p-8 m-8 ml-20 leading-7 font-mono border-4">
-        <div className="hidden 2xl:block 2xl:float-right 2xl:m-8">
+        <div className="hidden md:block md:float-right md:m-8">
           <img className='rounded-3xl' src="/images/pic-collage.png" alt="logo" width={350} height={350} />
         </div>
         <h1 className="text-3xl underline underline-offset-4 bg-yellow-300 p-1 text-black inline">

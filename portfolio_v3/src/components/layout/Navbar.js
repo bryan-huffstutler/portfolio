@@ -1,9 +1,11 @@
 import SearchBar from "./SearchBar";
 import { Link } from "react-router-dom";
+import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineDownload } from "react-icons/ai";
 
 function Navbar(props) {
   return (
-    <div className="fixed top-0 w-screen grid grid-cols-3 bg-blue-600 text-neutral-200 z-50">
+    <div className="fixed top-0 w-screen grid grid-cols-3 bg-blue-600 text-neutral-200 z-50 p-4">
       <div className="col-start-1 col-end-2 ml-10 p-3 hidden md:block">
         <img src="/images/B.png" className="h-12 w-12 inline" alt="logo" />
         <Link to="/">
@@ -25,15 +27,23 @@ function Navbar(props) {
         <Link to="/work" className="hover:text-red-500">
           Work
         </Link>
-        <Link to="/contact" className="hover:text-red-500">
+        <a href="mailto:bhuff8404@gmail.com" className="hover:text-red-500">
+          <AiOutlineMail className="inline" size="1.5em" />
           Contact
-        </Link>
-        <Link to="/resume" className="hover:text-red-500">
+        </a>
+        <a
+          href="Bryan Huffstutler1.docx"
+          download
+          rel="noopener noreferrer"
+          target="blank"
+          className="hover:text-red-500"
+        >
+          <AiOutlineDownload size="1.5em" className="inline" />
           Resume/CV
-        </Link>
+        </a>
       </div>
 
-      <SearchBar />
+      {/* <SearchBar /> */}
     </div>
   );
 }
