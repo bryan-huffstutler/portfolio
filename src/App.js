@@ -1,9 +1,8 @@
 import React from "react";
 import Home from "./components/home/Home";
-import Blog from './components/blogs/Blog';
 import ErrorPage from './components/ErrorPage'
 import Work from './components/work/Work'
-import { Link, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Contact from "./components/contact/Contact";
 
 function App() {

@@ -1,4 +1,4 @@
-import SearchBar from "./SearchBar";
+
 import { Link } from "react-router-dom";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineDownload } from "react-icons/ai";

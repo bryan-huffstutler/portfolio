@@ -5,11 +5,7 @@ function BlogCard(props) {
     pubDate,
     title,
     thumbnail,
-    link,
-    categories,
-    author,
-    content,
-    description,
+    link
   } = props;
 
   const date = pubDate.slice(0, 10);
