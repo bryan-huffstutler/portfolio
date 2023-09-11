@@ -68,7 +68,7 @@ function Work() {
           </h1>
 
           <p className="p-4 text-center leading-loose text-2xl">
-            This project was created for a small sports in St Louis, MO. It
+            This project was created for a small sports bar in St Louis, MO. It
             provides the Manager's/Admin a mini HR GUI through the admin panel
             to handle employee logins, PTO requests, and allows the
             Manager/Admin to view employee available time-off such as Sick time.
